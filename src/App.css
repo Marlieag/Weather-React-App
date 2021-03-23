@@ -1,38 +1,163 @@
-.App {
+.Weather {
+  color: #ffffff;
+  background-image: linear-gradient(
+    180deg,
+    #96deda 10%,
+    #5eaaa8 100%,
+    #487e95 10%,
+    #276678 10%
+  );
+  background-blend-mode: normal, lighten, soft-light;
+  border-radius: 20px;
+  margin: auto 20px 0px;
+  max-width: 430px;
+  max-height: 764px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 45px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: -40px;
+  left: -15px;
+}
+h3 {
+  font-size: 18px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h4 {
   color: white;
+  font-size: 15px;
+}
+h6 {
+  font-size: 12px;
+}
+.search-bar {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding: 20px 0px 10px 10px;
+}
+figure {
+  margin-bottom: 0%;
+}
+.col {
+  padding: 0%;
+}
+.col .dayTemp {
+  position: relative;
+  left: 20px;
+}
+.col .dayTemp2 {
+  position: relative;
+  right: 20px;
+}
+.col-8 {
+  padding: 0px 30px 0px 20px;
+}
+.col-3 {
+  padding: 0px 15px 0px 0px;
+  position: relative;
+  left: -20px;
 }
 
-.App-link {
-  color: #61dafb;
+.col-1 {
+  position: relative;
+  padding: 0px 20px 0px 0px;
+  left: -28px;
+}
+.col-7 {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.col-5 {
+  padding: 0;
+}
+
+.mainTemp {
+  position: relative;
+  right: -10px;
+  top: -20px;
+}
+.convert {
+  font-size: small;
+  position: relative;
+  top: -70px;
+  right: 10px;
+}
+.active {
+  color: inherit;
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
+}
+.weather-icon {
+  position: relative;
+  top: -42px;
+  left: -15px;
+}
+
+.label {
+  font-size: 12px;
+  padding: 5px 10px 5px 15px;
+  display: flex;
+  flex-direction: row;
+}
+.label:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 0.2px solid #fff;
+  margin: auto;
+  margin-left: 10px;
+}
+.details {
+  position: relative;
+  right: 0px;
+  padding: 10px 30px 15px 10px;
+  display: block;
+}
+.thermometer {
+  position: relative;
+  left: 20px;
+  font-size: 20px;
+}
+.wind-icon {
+  position: relative;
+  left: 15px;
+  font-size: 20px;
+}
+.humidity-icon {
+  position: relative;
+  left: 20px;
+  font-size: 20px;
+}
+.pressure-icon {
+  position: relative;
+  left: 12px;
+}
+
+h5 {
+  font-size: 15px;
+  text-align: center;
+}
+.week {
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+.source-code {
+  position: relative;
+  left: 95px;
+  font-size: small;
 }
