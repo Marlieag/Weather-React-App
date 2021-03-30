@@ -6,6 +6,12 @@ export default function App() {
     return (
         <div className="App">
             <WeatherApp/>
+        <footer>
+        Coded by Marlin Aleman and is {" "}
+            <a href="/">
+                open-sourced on GitHub
+            </a>
+        </footer>
         </div>
     );
 }
