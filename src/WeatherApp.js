@@ -16,7 +16,26 @@ export default function Weather() {
   
 <figure className="text-center">
   <div className="row">
-    <div className="col-8">
+     <div className="col-4">
+      <span className="highLow">
+      <ul>
+      <li>
+      <span className="High">
+         ↑39
+      </span>
+      </li>
+      <li>
+      <span className="Low">
+        ↓19
+      </span>
+      </li>
+      </ul>
+      </span>
+    </div>
+  
+
+
+    <div className="col-4">
       <h1 className="display-1">
         <span className="mainTemp">
            30
@@ -27,29 +46,22 @@ export default function Weather() {
       <span className="convert">
       <ul>
       <li>
-      <h1 className= "display-1">
-        °
-      </h1>
-      </li>
-      <li>
-      <span>
+      <span className="Celsius">
         <a href="/" className="active">
          C
         </a>
       </span>
       </li>
       <li>
-      <span>
-        <a href="/">|F</a>
+      <span className="Fahren">
+        <a href="/">F</a>
       </span>
       </li>
       </ul>
       </span>
     </div>
   </div>
-</figure>  
 
-<figure className="text-center">
   <div className="row">
     <div className="col-6">
       <span className="weatherIcon">
