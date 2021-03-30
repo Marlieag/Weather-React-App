@@ -55,23 +55,24 @@ export default function Weather() {
           </div>
         </div>
       </figure>
-        <div className="row">
-    <div className="col-6">
-      <span className="weather-icon">
-         <img
+
+    <figure className="text-center">
+    <div className="row">
+    <div ClassName="col-6">
+      
+      <img
            src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
             alt="weather icon"
-            width="50"
-            className="float-left"
-          />
-      </span>
-    </div>
-    <div ClassName="col-6">
-      <h2 className="description"> 
+            width="50"          
+      />
+      <span className="description">
+      <h2> 
         Sunny 
       </h2>
+      </span>
     </div>
     </div>
+    </figure>
 
       <h4 className="text-uppercase">
         <span className="label">Details</span>
