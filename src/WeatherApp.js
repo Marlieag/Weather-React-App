@@ -14,65 +14,66 @@ export default function Weather() {
         Mon | Mar 24 | 8:20 PM
       </h4>
   
+<figure className="text-center">
+  <div className="row">
+    <div className="col-8">
+      <h1 className="display-1">
+        <span className="mainTemp">
+           30
+        </span>
+      </h1>
+    </div>
+    <div className="col">
+      <span className="convert">
+      <ul>
+      <li>
+      <h1 className= "display-1">
+        °
+      </h1>
+      </li>
+      <li>
+      <span>
+        <a href="/" className="active">
+         C
+        </a>
+      </span>
+      </li>
+      <li>
+      <span>
+        <a href="/">|F</a>
+      </span>
+      </li>
+      </ul>
+      </span>
+    </div>
+  </div>
+</figure>  
 
-      <figure className="text-center">
-        <div className="row">
-          <div className="col">
-            <div className="dayTemp">
-              <h3>
-                High
-                <br />
-              </h3>
-            </div>
-          </div>
-          
-            <h1 className="display-1">
-              <span className="mainTemp">30</span>
-             </h1>
-              <span className="convert">
-                <span>
-                  <a href="/" className="active">
-                    °C
-                  </a>
-                </span>
-
-                <span>
-                  <a href="/">|°F</a>
-                </span>
-              </span>
-           
-            
-           
-         
-
-          <div className="col">
-            <div className="dayTemp2">
-              <h3>
-                Low
-                <br />
-              </h3>
-            </div>
-          </div>
-        </div>
-      </figure>
-
-    <figure className="text-center">
-    <div className="row">
-    <div ClassName="col-6">
-      
+<figure className="text-center">
+  <div className="row">
+    <div className="col-6">
+      <span className="weatherIcon">
       <img
            src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
             alt="weather icon"
             width="50"          
       />
+      </span>
       <span className="description">
       <h2> 
         Sunny 
       </h2>
       </span>
     </div>
-    </div>
-    </figure>
+  </div>
+</figure>         
+         
+
+        
+
+   
+   
+    
 
       <h4 className="text-uppercase">
         <span className="label">Details</span>

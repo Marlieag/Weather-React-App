@@ -4,15 +4,15 @@ export default function SearchEngine(props) {
   return (
     <form className="search-bar">
       <div className="row">
-        <div className="col-8">
+        <div className="col-7">         
           <input
             type="text"
             placeholder="Enter a city..."
             autoFocus="on"
-            className="form-control"
+            className="form-control w-76"
+            
           />
         </div>
-
         <div className="col-3">
           <div className="primaryButton">
             <input
@@ -24,7 +24,7 @@ export default function SearchEngine(props) {
         </div>
 
         <div className="col-1">
-          <input type="button" className="btn btn-light " />
+          <input type="button" value="📍" className="btn btn-light " />
 
           <i className="fas fa-map-marker-alt"></i>
         </div>
