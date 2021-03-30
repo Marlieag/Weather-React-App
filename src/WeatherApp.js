@@ -23,7 +23,7 @@ export default function Weather() {
         </span>
       </h1>
     </div>
-    <div className="col">
+    <div className="col-4">
       <span className="convert">
       <ul>
       <li>

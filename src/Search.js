@@ -4,12 +4,12 @@ export default function SearchEngine(props) {
   return (
     <form className="search-bar">
       <div className="row">
-        <div className="col-7">         
+        <div className="col-8">         
           <input
             type="text"
             placeholder="Enter a city..."
             autoFocus="on"
-            className="form-control w-76"
+            className="form-control w-100"
             
           />
         </div>
@@ -18,7 +18,7 @@ export default function SearchEngine(props) {
             <input
               type="submit"
               value="Search"
-              className="btn btn-primary form-control"
+              className="btn btn-primary form-control w-75"
             />
           </div>
         </div>

@@ -34,7 +34,7 @@ h4 {
   color: white;
   font-size: 15px;
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
 }
 h6 {
   font-size: 12px;
@@ -42,7 +42,7 @@ h6 {
 .search-bar {
   margin-top: 20px;
   margin-bottom: 0px;
-  padding: 20px 0px 10px 10px;
+  padding: 20px 0px 10px 15px;
 }
 
 footer {
@@ -57,34 +57,37 @@ footer {
   position: relative;
   right: -105px;
 }
-.col-6 {
-  padding: 0%;
-}
-.col {
-  padding: 0%;
-}
 
 .col-3 {
-  padding: 0px 15px 0px 0px;
+  padding: 0px;
   position: relative;
+  margin-right: 0%;
+  right: 10px;
 }
 
 .col-1 {
   position: relative;
   padding: 0px 20px 0px 0px;
+  right: 30px;
 }
-
+.col-4 {
+  padding: 0%;
+}
 .mainTemp {
   position: relative;
-  float: right;
   text-align: center;
+  float: right;
   padding: 0;
+  margin: auto 0;
+}
+.convert {
+  position: relative;
+  float: left;
 }
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  float: left;
 }
 
 .active {
