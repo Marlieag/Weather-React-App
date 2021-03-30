@@ -9,27 +9,21 @@
   );
   background-blend-mode: normal, lighten, soft-light;
   border-radius: 20px;
-  margin: auto 20px 0px;
+  margin: 20px auto;
   max-width: 430px;
-  max-height: 764px;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 0;
 }
 
 h1 {
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   font-size: 45px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 h2 {
   font-size: 20px;
-  display: inline-block;
   text-align: center;
-  position: relative;
-  top: -40px;
-  left: -15px;
 }
 h3 {
   font-size: 18px;
@@ -39,6 +33,8 @@ h3 {
 h4 {
   color: white;
   font-size: 15px;
+  text-align: center;
+  padding-bottom: 15px;
 }
 h6 {
   font-size: 12px;
@@ -89,23 +85,13 @@ figure {
   right: -10px;
   top: -20px;
 }
-.convert {
-  font-size: small;
-  position: relative;
-  top: -70px;
-  right: 10px;
-}
+
 .active {
   color: inherit;
   cursor: default;
 }
 .active:hover {
   text-decoration: none;
-}
-.weather-icon {
-  position: relative;
-  top: -42px;
-  left: -15px;
 }
 
 .label {

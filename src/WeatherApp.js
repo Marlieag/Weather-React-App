@@ -7,18 +7,13 @@ export default function Weather() {
   return (
     <div className="Weather">
       <Search />
+      <h1 className="currentCity">
+        DENVER
+      </h1>
       <h4>
-        <figure className="text-center">
-          <span className="date">
-            <div className="row">
-              <div className="col-5">Today, Dec 28, 2020</div>
-              <div className="col-7">10:00 A.M.</div>
-            </div>
-          </span>
-        </figure>
+        Mon | Mar 24 | 8:20 PM
       </h4>
-
-      <h1>Denver</h1>
+  
 
       <figure className="text-center">
         <div className="row">
@@ -30,10 +25,10 @@ export default function Weather() {
               </h3>
             </div>
           </div>
-          <div className="col-7">
+          
             <h1 className="display-1">
               <span className="mainTemp">30</span>
-
+             </h1>
               <span className="convert">
                 <span>
                   <a href="/" className="active">
@@ -45,16 +40,10 @@ export default function Weather() {
                   <a href="/">|°F</a>
                 </span>
               </span>
-            </h1>
-            <span className="weather-icon">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                alt="weather icon"
-                width="50"
-              />
-            </span>
-            <h2 className="text-capitalize"> Sunny </h2>
-          </div>
+           
+            
+           
+         
 
           <div className="col">
             <div className="dayTemp2">
@@ -66,6 +55,23 @@ export default function Weather() {
           </div>
         </div>
       </figure>
+        <div className="row">
+    <div className="col-6">
+      <span className="weather-icon">
+         <img
+           src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+            alt="weather icon"
+            width="50"
+            className="float-left"
+          />
+      </span>
+    </div>
+    <div ClassName="col-6">
+      <h2 className="description"> 
+        Sunny 
+      </h2>
+    </div>
+    </div>
 
       <h4 className="text-uppercase">
         <span className="label">Details</span>

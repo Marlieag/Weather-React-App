@@ -2,16 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import "bootstrap/dist/css/bootstrap.css";
-import WeatherApp from './WeatherApp';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-function App () {
-return(
-  <div>
-    <WeatherApp />
-  </div>
-);  
-} 
+
 const rootElement= document.getElementById('root');
 ReactDOM.render(<App />, rootElement);
 
