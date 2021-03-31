@@ -35,15 +35,15 @@ export default function Weather() {
   
 
 
-    <div className="col-4">
-      <h1 className="display-1">
-        <span className="mainTemp">
-           30
-        </span>
-      </h1>
-    </div>
-    <div className="col-4">
-      <span className="convert">
+  <div className="col-4">
+    <h1 className="display-1">
+      <span className="mainTemp">
+        30
+      </span>
+    </h1>
+  </div>
+  <div className="col-4">
+    <span className="convert">
       <ul>
       <li>
       <span className="Celsius">
@@ -80,71 +80,118 @@ export default function Weather() {
   </div>
 </figure>         
          
+  <h4 className="text-uppercase">
+    <span className="label">
+      Details
+    </span>
+  </h4>
 
-        
-
-   
-   
+  <div className="details">
     
 
-      <h4 className="text-uppercase">
-        <span className="label">Details</span>
-      </h4>
-
-      <div className="details">
-        <div className="row justify-content-md-center ">
-          <div className="col-sm-3">
-            <div className="card h-70 text-start-white bg-transparent border border-transparent">
-              <div className="card-body">
-                <span className="thermometer">
-                  <i className="fas fa-thermometer-three-quarters"></i>
-                </span>
-
-                <h6 className="card-title text-center">Feels:</h6>
-                <p className="card-text-center"></p>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-sm-3">
-            <div className="card h-70 text-white bg-transparent border border-transparent ">
-              <div className="card-body">
-                <span className="humidity-icon">
-                  <i className="fas fa-tint"></i>
-                </span>
-                <h6 className="card-title text-center">Humidity:</h6>
-                <p className="card-text-center"> </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-sm-3">
-            <div className="card h-70 text-white bg-transparent border border-transparent">
-              <div className="card-body">
-                <span className="wind-icon">
-                  <i className="fas fa-wind"></i>
-                </span>
-                <h6 className="card-title text-center">Wind:</h6>
-                <p className="card-text-center"> </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-sm-3">
-            <div className="card h-70 text-white bg-transparent border border-transparent">
-              <div className="card-body">
-                <span className="pressure-icon"></span>
-                <h6 className="card-title text-center">Pressure:</h6>
-                <p className="card-text-center"></p>
-              </div>
-            </div>
-          </div>
-        </div>
+  <h4 className="text-uppercase">
+    <span className="label">
+      Next 5 days
+    </span>
+  </h4>
+<div className="week">
+  <h5>
+    <div className="row justify-content-md-center">
+      <div className="col-sm-2.5">
+        <div className="card text-muted bg-transparent border-0">
+          <div className="card-body">
+  <h5 className="card-title">
+    <span className="weekday">
+      Tue
+    </span>
+    <br/>
+      2/29
+  </h5>
+    <i className="fas fa-cloud-sun"></i>
+    <p className="card-text">
+      37°
+    <br/>
+      18°
+    </p>
       </div>
-
-      <h4 className="text-uppercase">
-        <span className="label">Next 5 days</span>
-      </h4>
     </div>
+  </div>
+
+  <div className="col-sm-2.5">
+    <div className="card text-muted bg-transparent border-0">
+      <div className="card-body">
+  <h5 className="card-title">
+      Wed
+    <br />
+      12/30
+  </h5>
+    <i className="fas fa-sun"></i>
+    <p className="card-text">
+      42°
+    <br />
+      24°
+    </p>
+      </div>
+    </div>
+  </div>
+  
+  <div className="col-sm-2.5">
+    <div className="card text-muted bg-transparent border-0">
+      <div className="card-body">
+  <h5 className="card-title">
+      Thu
+    <br />
+      12/31
+  </h5>
+    <i className="fas fa-cloud-sun"></i>
+    <p className="card-text">
+      47°
+    <br />
+      27°
+    </p>
+      </div>
+    </div>
+  </div>
+
+  <div className="col-sm-2.5">
+    <div className="card text-muted bg-transparent border-0">
+      <div className="card-body">
+  <h5 className="card-title">
+      Fri
+    <br />
+      01/01
+  </h5>
+    <i className="fas fa-cloud-sun"></i>
+    <p className="card-text">
+      41°
+    <br />
+      24°
+    </p>
+      </div>
+    </div>
+  </div>
+
+<div className="col-sm-2.5">
+  <div className="card text-muted bg-transparent border-0">
+    <div className="card-body">
+  <h5 className="card-title">
+      Sat
+    <br />
+      01/02
+  </h5>
+    <i className="fas fa-cloud-sun"></i>
+    <p className="card-text">
+      49°
+    <br />
+      27°
+    </p>
+    </div>
+  </div>
+</div>
+</div>
+    </h5>
+    </div>
+    </div>
+  </div>
   );
 }
