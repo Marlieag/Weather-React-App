@@ -81,149 +81,40 @@ export default function Weather() {
 </figure>         
          
 
-  <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
-  <div className="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div className="carousel-inner">
-       <div className="carousel-item active">
-      <h4 className="text-uppercase">
-    <span className="label">
-      Details
-    </span>
-  </h4>
+<div id="myCarousel" className="carousel slide" data-bs-ride="carousel">  
 
-  <div className="details">
-    Hello
+<ol className="carousel-indicators">
+	<li data-target="#myCarousel" data-slide-to="0" className="active">
+	</li>
+	<li data-target="#myCarousel" data-slide-to="1">
+	</li>
+  <li data-target="#myCarousel" data-slide-to="2">
+	</li>
+</ol>
+ 
+<div className="carousel-inner">
+  <div className="carousel-item active">
+    <p>Details</p>
   </div>
-    </div>
-
-    <div className="carousel-item">
-  <h4 className="text-uppercase">
-    <span className="label">
-      Next 5 days
-    </span>
-  </h4>
-<div className="week">
-  <h5>
-    <div className="row justify-content-md-center">
-      <div className="col-sm-2.5">
-        <div className="card text-muted bg-transparent border-0">
-          <div className="card-body">
-  <h5 className="card-title">
-    <span className="weekday">
-      Tue
-    </span>
-    <br/>
-      2/29
-  </h5>
-    <i className="fas fa-cloud-sun"></i>
-    <p className="card-text">
-      37°
-    <br/>
-      18°
-    </p>
-      </div>
-    </div>
+  <div className="carousel-item">
+      <p>Hourly Forecast</p>
   </div>
-
-  <div className="col-sm-2.5">
-    <div className="card text-muted bg-transparent border-0">
-      <div className="card-body">
-  <h5 className="card-title">
-      Wed
-    <br />
-      12/30
-  </h5>
-    <i className="fas fa-sun"></i>
-    <p className="card-text">
-      42°
-    <br />
-      24°
-    </p>
-      </div>
-    </div>
-  </div>
-  
-  <div className="col-sm-2.5">
-    <div className="card text-muted bg-transparent border-0">
-      <div className="card-body">
-  <h5 className="card-title">
-      Thu
-    <br />
-      12/31
-  </h5>
-    <i className="fas fa-cloud-sun"></i>
-    <p className="card-text">
-      47°
-    <br />
-      27°
-    </p>
-      </div>
-    </div>
-  </div>
-
-  <div className="col-sm-2.5">
-    <div className="card text-muted bg-transparent border-0">
-      <div className="card-body">
-  <h5 className="card-title">
-      Fri
-    <br />
-      01/01
-  </h5>
-    <i className="fas fa-cloud-sun"></i>
-    <p className="card-text">
-      41°
-    <br />
-      24°
-    </p>
-      </div>
-    </div>
-  </div>
-
-<div className="col-sm-2.5">
-  <div className="card text-muted bg-transparent border-0">
-    <div className="card-body">
-  <h5 className="card-title">
-      Sat
-    <br />
-      01/02
-  </h5>
-    <i className="fas fa-cloud-sun"></i>
-    <p className="card-text">
-      49°
-    <br />
-      27°
-    </p>
-    </div>
+  <div className="carousel-item">
+      <p>Next five days</p>
   </div>
 </div>
-</div>
-    </h5>
-    </div>
-
-    <div className="carousel-item">
-      <img src="..." className="d-block w-100" alt="..."/>
-    </div>
+<a href="#myCarousel" className="carousel-control-prev" role="button" data-slide="prev">
+	<span className="sr-only">Previous</span>
+	<span className="carousel-control-prev-icon" aria-hidden="true"></span>
+</a>
+<a href="#myCarousel" className="carousel-control-next" role="button" data-slide="next">
+	<span className="sr-only">Next</span>
+	<span className="carousel-control-next-icon" aria-hidden="true"></span>
+</a>  
+  </div>
   </div> 
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true">
-  </span>
-    <span className="visually-hidden">
-      Previous
-    </span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true">     
-    </span>
-    <span className="visually-hidden">
-      Next
-    </span>
-  </button>
-  </div>
-  </div>
-  </div>
+  
+  
+  
   );
 }
