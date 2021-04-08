@@ -3,8 +3,11 @@ import './App.css';
 import Search from "./Search";
 
 
+
+
 export default function Weather() {
   return (
+    <div className="container">
     <div className="Weather">
       <Search />
       <h1 className="currentCity">
@@ -79,40 +82,9 @@ export default function Weather() {
     </div>
   </div>
 </figure>         
-         
 
-<div id="myCarousel" className="carousel slide" data-bs-ride="carousel">  
-
-<ol className="carousel-indicators">
-	<li data-target="#myCarousel" data-slide-to="0" className="active">
-	</li>
-	<li data-target="#myCarousel" data-slide-to="1">
-	</li>
-  <li data-target="#myCarousel" data-slide-to="2">
-	</li>
-</ol>
- 
-<div className="carousel-inner">
-  <div className="carousel-item active">
-    <p>Details</p>
-  </div>
-  <div className="carousel-item">
-      <p>Hourly Forecast</p>
-  </div>
-  <div className="carousel-item">
-      <p>Next five days</p>
-  </div>
-</div>
-<a href="#myCarousel" className="carousel-control-prev" role="button" data-slide="prev">
-	<span className="sr-only">Previous</span>
-	<span className="carousel-control-prev-icon" aria-hidden="true"></span>
-</a>
-<a href="#myCarousel" className="carousel-control-next" role="button" data-slide="next">
-	<span className="sr-only">Next</span>
-	<span className="carousel-control-next-icon" aria-hidden="true"></span>
-</a>  
-  </div>
-  </div> 
+ </div>
+</div> 
   
   
   
