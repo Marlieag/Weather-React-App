@@ -1,8 +1,11 @@
 .Weather {
   color: #ffffff;
-  background: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
 
-  background-blend-mode: normal, lighten, soft-light;
+  background: linear-gradient(
+    112.1deg,
+    rgb(32, 38, 57) 11.4%,
+    rgb(63, 76, 119) 70.2%
+  );
   border-radius: 20px;
   margin: 20px auto;
   max-width: 430px;
