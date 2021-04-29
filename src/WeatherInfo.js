@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 
+
 export default function WeatherInfo(props) {
     return (
     <div className= "weatherInfo">
@@ -63,7 +64,7 @@ export default function WeatherInfo(props) {
       <img
            src= {props.data.icon}
             alt={props.data.description}
-            width="50"          
+            width="60"          
       />
       </span>
       <span className="text-capitalize">
