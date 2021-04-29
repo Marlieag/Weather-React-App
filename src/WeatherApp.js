@@ -1,17 +1,33 @@
-import React from "react";
+import React, {useState} from "react";
 import './App.css';
+import axios from "axios";
 import Search from "./Search";
 
 
 
 
-export default function Weather() {
+export default function Weather(props) {
+  const [weatherData, setWeatherData] = useState({ready: false});
+
+  function handleResponse (response) {
+    console.log(response.data);
+  setWeatherData ({
+    ready: true,
+    temperature: response.data.main.temp,
+    highTemp: response.data.main.temp_max,
+    lowTemp: response.data.main.temp_min,
+    description: response.data.weather[0].description,
+    icon: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
+    city: response.data.name
+  }); 
+}
+  if (weatherData.ready) {
   return (
     <div className="container">
     <div className="Weather">
       <Search />
       <h1 className="currentCity">
-        DENVER
+        {weatherData.city}
       </h1>
       <h4>
         Mon | Mar 24 | 8:20 PM
@@ -24,24 +40,22 @@ export default function Weather() {
       <ul>
       <li>
       <span className="High">
-         ↑39
+         ↑ {Math.round(weatherData.highTemp)}°
       </span>
       </li>
       <li>
       <span className="Low">
-        ↓19
+        ↓ {Math.round(weatherData.lowTemp)}°
       </span>
       </li>
       </ul>
       </span>
     </div>
   
-
-
   <div className="col-4">
     <h1 className="display-1">
       <span className="mainTemp">
-        30
+        {Math.round(weatherData.temperature)}
       </span>
     </h1>
   </div>
@@ -51,13 +65,13 @@ export default function Weather() {
       <li>
       <span className="Celsius">
         <a href="/" className="active">
-         C
+         C°
         </a>
       </span>
       </li>
       <li>
       <span className="Fahren">
-        <a href="/">F</a>
+        <a href="/">F°</a>
       </span>
       </li>
       </ul>
@@ -69,15 +83,17 @@ export default function Weather() {
     <div className="col-6">
       <span className="weatherIcon">
       <img
-           src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-            alt="weather icon"
+           src= {weatherData.icon}
+            alt={weatherData.description}
             width="50"          
       />
       </span>
-      <span className="description">
-      <h2> 
-        Sunny 
+      <span className="text-capitalize">
+        <span className="description">
+      <h2>        
+        {weatherData.description}         
       </h2>
+        </span>
       </span>
     </div>
   </div>
@@ -85,8 +101,13 @@ export default function Weather() {
 
  </div>
 </div> 
-  
-  
-  
-  );
+   
+);
+} else {
+  const apiKey = "752caa80f650691fadd3574c96f9f105";
+  const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(handleResponse);
+
+  return "loading..."
+}
 }
