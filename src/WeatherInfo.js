@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherTemp from "./WeatherTemp";
 
 
 export default function WeatherInfo(props) {
@@ -11,54 +12,9 @@ export default function WeatherInfo(props) {
       <h4>
         <FormattedDate date= {props.data.date} />
       </h4>
-  
 <figure className="text-center">
-  <div className="row">
-     <div className="col-4">
-      <span className="highLow">
-      <ul>
-      <li>
-      <span className="High">
-         ↑ {Math.round(props.data.highTemp)}°
-      </span>
-      </li>
-      <li>
-      <span className="Low">
-        ↓ {Math.round(props.data.lowTemp)}°
-      </span>
-      </li>
-      </ul>
-      </span>
-    </div>
-  
-  <div className="col-4">
-    <h1 className="display-1">
-      <span className="mainTemp">
-        {Math.round(props.data.temperature)}
-      </span>
-    </h1>
-  </div>
-  <div className="col-4">
-    <span className="convert">
-      <ul>
-      <li>
-      <span className="Celsius">
-        <a href="/" className="active">
-         C°
-        </a>
-      </span>
-      </li>
-      <li>
-      <span className="Fahren">
-        <a href="/">F°</a>
-      </span>
-      </li>
-      </ul>
-      </span>
-    </div>
-  </div>
-
-  <div className="row">
+    <WeatherTemp celsius = {props.data.temperature}/>
+<div className="row">
     <div className="col-6">
       <span className="weatherIcon">
       <img
@@ -77,6 +33,7 @@ export default function WeatherInfo(props) {
     </div>
   </div>
 </figure>
+
 </div>
-    )
+    );
 }
