@@ -8,7 +8,7 @@ export default function App() {
             <WeatherApp defaultCity= "Denver" />
         <footer>
         Coded by Marlin Aleman and is {" "}
-            <a href="/">
+            <a href="https://github.com/Marlieag/Weather-React-App">
                 open-sourced on GitHub
             </a>
         </footer>
