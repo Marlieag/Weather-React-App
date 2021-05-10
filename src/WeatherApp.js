@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import './App.css';
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import LocationButton from "./LocationButton";
 
 
 
@@ -64,9 +65,7 @@ function search(){
         </div>
 
         <div className="col-1">
-          <input type="button" value="📍" className="btn btn-light " />
-
-          <i className="fas fa-map-marker-alt"></i>
+         <LocationButton/>
         </div>
       </div>
     </form>
