@@ -4,9 +4,6 @@ import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import Button from "react-bootstrap/Button";
 
-
-
-
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ready: false});
   const [city, setCity] = useState(props.defaultCity);
@@ -41,12 +38,12 @@ function search(){
     let lon = position.coords.longitude;
     let lat = position.coords.latitude;
     let key="752caa80f650691fadd3574c96f9f105";
-    let url=`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}}&appid=${key}&units=metric`;
+    let url=`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=metric`;
     axios.get(url).then(handleResponse);
 }
   function getLocation(event){
     event.preventDefault ();
-  navigator.geolocation.getCurrentLocation(showLocation); 
+  navigator.geolocation.getCurrentPosition(showLocation); 
 }
   if (weatherData.ready) {
   return (
