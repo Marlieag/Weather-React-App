@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import './App.css';
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
-import LocationButton from "./LocationButton";
+import Button from "react-bootstrap/Button";
 
 
 
@@ -37,7 +37,17 @@ function search(){
   function changeCity (event){
     setCity(event.target.value);
   }
-
+  function showLocation(position){
+    let lon = position.coords.longitude;
+    let lat = position.coords.latitude;
+    let key="752caa80f650691fadd3574c96f9f105";
+    let url=`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}}&appid=${key}&units=metric`;
+    axios.get(url).then(handleResponse);
+}
+  function getLocation(event){
+    event.preventDefault ();
+  navigator.geolocation.getCurrentLocation(showLocation); 
+}
   if (weatherData.ready) {
   return (
     <div className="container">
@@ -65,7 +75,11 @@ function search(){
         </div>
 
         <div className="col-1">
-         <LocationButton/>
+  <Button variant="light" type ="button" size="md" onClick= {getLocation}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+            </svg>
+  </Button>
         </div>
       </div>
     </form>
