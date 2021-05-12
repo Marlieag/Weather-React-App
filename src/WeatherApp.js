@@ -3,6 +3,7 @@ import './App.css';
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import Button from "react-bootstrap/Button";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ready: false});
@@ -47,6 +48,7 @@ function search(){
 }
   if (weatherData.ready) {
   return (
+    <div className="WeatherApp">
     <div className="container">
     <div className="Weather">
       <form className="search-bar" onSubmit={handleSubmit}>
@@ -82,9 +84,12 @@ function search(){
     </form>
       <WeatherInfo data = {weatherData}/>        
 
- </div>
+</div>
+<div className = "container">
+      <WeatherForecast/>
+</div>
 </div> 
-   
+</div> 
 );
 } else {
   search();
