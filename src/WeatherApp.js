@@ -13,6 +13,7 @@ export default function Weather(props) {
     console.log(response.data);
   setWeatherData ({
     ready: true,
+    coordinates: response.data.coord,
     temperature: response.data.main.temp,
     highTemp: response.data.main.temp_max,
     lowTemp: response.data.main.temp_min,
@@ -86,7 +87,7 @@ function search(){
 
 </div>
 <div className = "container">
-      <WeatherForecast/>
+      <WeatherForecast coordinates= {weatherData.coordinates}/>
 </div>
 </div> 
 </div> 
