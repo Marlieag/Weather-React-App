@@ -4,13 +4,14 @@ export default function FormattedDate(props) {
     console.log(props.date);
     let date = props.date.getDate();
     let days= [
+        "Sun",
         "Mon",
         "Tue",
         "Wed",
         "Thu",
         "Fri",
-        "Sat",
-        "Sun"
+        "Sat"
+        
     
     ];
     let day = days[props.date.getDay()];
