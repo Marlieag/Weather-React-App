@@ -4,6 +4,7 @@ import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import Button from "react-bootstrap/Button";
 import WeatherForecast from "./WeatherForecast";
+import WeatherDetails from "./WeatherDetails";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ready: false});
@@ -85,6 +86,9 @@ function search(){
     </form>
       <WeatherInfo data = {weatherData}/>        
 
+</div>
+<div className = "container">
+  <WeatherDetails/>
 </div>
 <div className = "container">
       <WeatherForecast coordinates= {weatherData.coordinates}/>

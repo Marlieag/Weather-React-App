@@ -17,6 +17,16 @@ let [forecast, setForecast]= useState(null);
         setForecast(response.data.daily);
         setLoaded(true);
     }
+
+    function load() {
+        let apiKey= "752caa80f650691fadd3574c96f9f105";
+        let lon=props.coordinates.lon;
+        let lat=props.coordinates.lat;
+        let apiUrl=`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
+    
+        axios.get(apiUrl).then(handleResponse);
+        
+    }
     
 if (loaded){
     console.log(forecast);
@@ -33,6 +43,8 @@ return (
          <WeatherForecastDay data= {dailyForecast}/>
         </div>
         );
+        }else{
+        return null;
         }
         })}
     </div>
@@ -41,14 +53,9 @@ return (
 );
 
 }else {
-
-let apiKey= "752caa80f650691fadd3574c96f9f105";
-    let lon=props.coordinates.lon;
-    let lat=props.coordinates.lat;
-    let apiUrl=`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
     
-    axios.get(apiUrl).then(handleResponse);
-
+    load();
+    
     return null; 
 
 }
