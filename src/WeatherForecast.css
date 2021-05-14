@@ -1,11 +1,7 @@
 .dailyForecast {
   color: #ffffff;
 
-  background: linear-gradient(
-    112.1deg,
-    rgb(32, 38, 57, 0.6) 11.4%,
-    rgb(63, 76, 119, 0.5) 70.2%
-  );
+  background: hsl(205, 98%, 57%) 70.2%;
   border-radius: 20px;
   margin: 10px auto;
   margin-bottom: 0%;

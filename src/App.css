@@ -1,11 +1,7 @@
 .Weather {
   color: #ffffff;
-
-  background: linear-gradient(
-    112.1deg,
-    rgb(32, 38, 57, 0.8) 11.4%,
-    rgb(63, 76, 119, 0.6) 70.2%
-  );
+  background-position: center;
+  background-image: url("/src/Images/overcast1.jpg");
   border-radius: 20px;
   margin: 20px auto;
   margin-bottom: 10px;
@@ -19,6 +15,8 @@ h1 {
   margin: 0 auto;
   font-size: 45px;
   padding-bottom: 0px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 h2 {
@@ -31,7 +29,7 @@ h3 {
 }
 
 h4 {
-  color: white;
+  color: rgb(66, 65, 65);
   font-size: 15px;
   text-align: center;
   padding-bottom: 0px;
@@ -52,6 +50,7 @@ footer {
   display: inline-block;
   position: relative;
   right: -110px;
+  color: white;
 }
 .weatherIcon {
   position: relative;
@@ -74,10 +73,13 @@ footer {
   padding: 0%;
 }
 .highLow {
+  color: white;
   float: right;
   position: relative;
   bottom: -20px;
   font-size: 20px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 .mainTemp {
   position: relative;
@@ -90,6 +92,7 @@ footer {
   position: relative;
   bottom: -20px;
   font-size: 20px;
+  color: rgb(66, 65, 65);
 }
 ul {
   list-style-type: none;

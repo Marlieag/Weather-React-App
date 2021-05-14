@@ -7,17 +7,21 @@ export default function WeatherInfo(props) {
     return (
     <div className= "weatherInfo">
        <h1 className="currentCity">
+        <strong>
         {props.data.city}
+        </strong>
       </h1>
       <h4>
         <FormattedDate date= {props.data.date} />
       </h4>
 <figure className="text-center">
+    <strong>
     <WeatherTemp 
     celsius={props.data.temperature}
     max={props.data.highTemp}
     min= {props.data.lowTemp}
     />
+    </strong>
 <div className="row">
     <div className="col-6">
       <span className="weatherIcon">

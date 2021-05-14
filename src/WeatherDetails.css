@@ -1,11 +1,8 @@
 .details {
   color: #ffffff;
 
-  background: linear-gradient(
-    112.1deg,
-    rgb(32, 38, 57, 0.8) 11.4%,
-    rgb(63, 76, 119, 0.6) 70.2%
-  );
+  background: rgba(63, 102, 231, 0.8);
+
   border-radius: 20px;
   margin: 0px auto;
   padding: 10px;
