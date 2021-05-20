@@ -18,6 +18,10 @@ export default function Weather(props) {
     temperature: response.data.main.temp,
     highTemp: response.data.main.temp_max,
     lowTemp: response.data.main.temp_min,
+    feels: response.data.main.feels_like,
+    humidity: response.data.main.humidity,
+    pressure: response.data.main.pressure,
+    wind: response.data.wind.speed,
     date: new Date(response.data.dt * 1000),
     description: response.data.weather[0].description,
     icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
@@ -88,7 +92,12 @@ function search(){
 
 </div>
 <div className = "container">
-  <WeatherDetails/>
+  <WeatherDetails 
+  feelsTemp = {weatherData.feels}
+  humidity = {weatherData.humidity}
+  pressure = {weatherData.pressure}
+  windSpeed = {weatherData.wind}
+  />
 </div>
 <div className = "container">
       <WeatherForecast coordinates= {weatherData.coordinates}/>
