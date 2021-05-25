@@ -1,13 +1,37 @@
 .Weather {
   color: #ffffff;
   background-position: center;
-  background-image: url("/src/Images/overcast1.jpg");
+  background-image: url("/src/Images/clearSky.jpg");
   border-radius: 20px;
   margin: 20px auto;
   margin-bottom: 10px;
   padding-bottom: 0.1px;
   max-width: 430px;
   font-family: Arial, Helvetica, sans-serif;
+}
+.clearSky {
+  background-image: url("/src/Images/clearSky.jpg");
+  background-position: center;
+}
+.overcast {
+  background-image: url("/src/Images/overcast1.jpg");
+  background-position: center;
+}
+.rain {
+  background-image: url("/src/Images/rain.jpg");
+  background-position: center;
+}
+.thunderstorm {
+  background-image: url("/src/Images/thunderstorm.jpg");
+  background-position: center;
+}
+.snow {
+  background-image: url("/src/Images/snow.jpg");
+  background-position: center;
+}
+.fog {
+  background-image: url("/src/Images/fog.jpg");
+  background-position: center;
 }
 
 h1 {
@@ -29,7 +53,7 @@ h3 {
 }
 
 h4 {
-  color: rgb(66, 65, 65);
+  color: rgb(22, 22, 22);
   font-size: 15px;
   text-align: center;
   padding-bottom: 0px;
@@ -51,6 +75,7 @@ footer {
   position: relative;
   right: -110px;
   color: white;
+  font-weight: 300;
 }
 .weatherIcon {
   position: relative;
@@ -78,7 +103,8 @@ footer {
   position: relative;
   bottom: -20px;
   font-size: 20px;
-  -webkit-text-stroke-width: 1px;
+  font-weight: bolder;
+  -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: black;
 }
 .mainTemp {
@@ -86,13 +112,15 @@ footer {
   text-align: center;
   padding: 0;
   margin: auto 0;
+  font-weight: 325;
 }
 .convert {
   float: left;
   position: relative;
   bottom: -20px;
   font-size: 20px;
-  color: rgb(66, 65, 65);
+  color: rgb(44, 44, 44);
+  font-weight: bold;
 }
 ul {
   list-style-type: none;

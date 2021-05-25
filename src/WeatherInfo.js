@@ -12,16 +12,16 @@ export default function WeatherInfo(props) {
         </strong>
       </h1>
       <h4>
+        <strong>
         <FormattedDate date= {props.data.date} />
+        </strong>
       </h4>
 <figure className="text-center">
-    <strong>
     <WeatherTemp 
     celsius={props.data.temperature}
     max={props.data.highTemp}
     min= {props.data.lowTemp}
-    />
-    </strong>
+    />  
 <div className="row">
     <div className="col-6">
       <span className="weatherIcon">

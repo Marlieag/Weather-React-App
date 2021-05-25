@@ -25,8 +25,10 @@ export default function Weather(props) {
     date: new Date(response.data.dt * 1000),
     description: response.data.weather[0].description,
     icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+    main: response.data.weather[0].main,
     city: response.data.name
   }); 
+  changeBackground ();
 }
 
 function search(){
@@ -37,9 +39,11 @@ function search(){
  function handleSubmit (event) {
     event.preventDefault();
     search();
+    
   }
   function changeCity (event){
     setCity(event.target.value);
+    
   }
   function showLocation(position){
     let lon = position.coords.longitude;
@@ -52,6 +56,12 @@ function search(){
     event.preventDefault ();
   navigator.geolocation.getCurrentPosition(showLocation); 
 }
+function changeBackground () {
+if (weatherData.main === "Clear") 
+{
+  alert ("clearSky");
+}}
+
   if (weatherData.ready) {
   return (
     <div className="WeatherApp">
