@@ -1,7 +1,8 @@
 .Weather {
   color: #ffffff;
-  background-position: center;
   background-image: url("/src/Images/clearSky.jpg");
+  background-size: 50;
+  background-position: center;
   border-radius: 20px;
   margin: 20px auto;
   margin-bottom: 10px;
@@ -9,58 +10,7 @@
   max-width: 430px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.clearSky {
-  background-image: url("/src/Images/clearSky.jpg");
-  background-position: center;
-}
-.overcast {
-  background-image: url("/src/Images/overcast1.jpg");
-  background-position: center;
-}
-.rain {
-  background-image: url("/src/Images/rain.jpg");
-  background-position: center;
-}
-.thunderstorm {
-  background-image: url("/src/Images/thunderstorm.jpg");
-  background-position: center;
-}
-.snow {
-  background-image: url("/src/Images/snow.jpg");
-  background-position: center;
-}
-.fog {
-  background-image: url("/src/Images/fog.jpg");
-  background-position: center;
-}
 
-h1 {
-  text-align: center;
-  margin: 0 auto;
-  font-size: 45px;
-  padding-bottom: 0px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-}
-
-h2 {
-  font-size: 20px;
-  text-align: center;
-}
-h3 {
-  font-size: 18px;
-  text-align: center;
-}
-
-h4 {
-  color: rgb(22, 22, 22);
-  font-size: 15px;
-  text-align: center;
-  padding-bottom: 0px;
-}
-h6 {
-  font-size: 12px;
-}
 .search-bar {
   margin-top: 20px;
   margin-bottom: 0px;
@@ -69,17 +19,8 @@ h6 {
 
 footer {
   text-align: center;
-}
-.description {
-  display: inline-block;
-  position: relative;
-  right: -110px;
-  color: white;
-  font-weight: 300;
-}
-.weatherIcon {
-  position: relative;
-  right: -105px;
+  font-family: monospace;
+  font-size: 15px;
 }
 
 .col-3 {
@@ -94,39 +35,6 @@ footer {
   padding: 0px 20px 0px 0px;
   right: 30px;
 }
-.col-4 {
-  padding: 0%;
-}
-.highLow {
-  color: white;
-  float: right;
-  position: relative;
-  bottom: -20px;
-  font-size: 20px;
-  font-weight: bolder;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: black;
-}
-.mainTemp {
-  position: relative;
-  text-align: center;
-  padding: 0;
-  margin: auto 0;
-  font-weight: 325;
-}
-.convert {
-  float: left;
-  position: relative;
-  bottom: -20px;
-  font-size: 20px;
-  color: rgb(44, 44, 44);
-  font-weight: bold;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
 .active {
   color: inherit;
@@ -134,29 +42,4 @@ ul {
 }
 .active:hover {
   text-decoration: none;
-}
-
-.label {
-  font-size: 12px;
-  padding: 5px 10px 5px 15px;
-  display: flex;
-  flex-direction: row;
-}
-.label:after {
-  content: "";
-  flex: 1 1;
-  border-bottom: 0.2px solid #fff;
-  margin: auto;
-  margin-left: 10px;
-}
-
-h5 {
-  font-size: 15px;
-  text-align: center;
-}
-
-.source-code {
-  position: relative;
-  left: 95px;
-  font-size: small;
 }

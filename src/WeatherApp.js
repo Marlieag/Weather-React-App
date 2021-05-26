@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import WeatherForecast from "./WeatherForecast";
 import WeatherDetails from "./WeatherDetails";
 
+
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ready: false});
   const [city, setCity] = useState(props.defaultCity);
@@ -28,13 +29,14 @@ export default function Weather(props) {
     main: response.data.weather[0].main,
     city: response.data.name
   }); 
-  changeBackground ();
-}
+  }
+
 
 function search(){
   const apiKey = "752caa80f650691fadd3574c96f9f105";
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(handleResponse);
+   
 }
  function handleSubmit (event) {
     event.preventDefault();
@@ -43,7 +45,7 @@ function search(){
   }
   function changeCity (event){
     setCity(event.target.value);
-    
+     
   }
   function showLocation(position){
     let lon = position.coords.longitude;
@@ -56,11 +58,8 @@ function search(){
     event.preventDefault ();
   navigator.geolocation.getCurrentPosition(showLocation); 
 }
-function changeBackground () {
-if (weatherData.main === "Clear") 
-{
-  alert ("clearSky");
-}}
+
+
 
   if (weatherData.ready) {
   return (
